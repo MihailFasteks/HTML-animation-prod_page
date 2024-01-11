@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        section {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .gallery {
+            max-width: 400px;
+        }
+
+        .main-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .thumbnails {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .thumbnail {
+            max-width: 80px;
+            height: 80px;
+            cursor: pointer;
+        }
+
+        .product-info {
+            max-width: 400px;
+            padding: 20px;
+        }
+
+        .price-button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .iframe-container {
+    width: 800px; /* увеличьте ширину */
+    height: 600px; /* увеличьте высоту */
+    border: 1px solid gray;
+}
+
+iframe {
+    width: 100%; /* ширина 100% для полного использования доступного пространства */
+    height: 100%; /* высота 100% для полного использования доступного пространства */
+    border: none;
+}
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <div class="gallery">
+            <div class="iframe-container">
+                <iframe src="img shipci/393639399.jpg.webp" name="iframeContent"></iframe>
+            </div>
+            <div class="thumbnails">
+                <a href="img shipci/393639399.jpg.webp" target="iframeContent"><img src="img shipci/393639399.jpg.webp" alt="Thumbnail 1" class="thumbnail"></a>
+                <a href="img shipci/393639400.jpg.webp" target="iframeContent"><img src="img shipci/393639400.jpg.webp" alt="Thumbnail 2" class="thumbnail"></a>
+                <a href="img shipci/393639402.jpg.webp" target="iframeContent"><img src="img shipci/393639402.jpg.webp" alt="Thumbnail 3" class="thumbnail"></a>
+                <a href="img shipci/393639403.jpg.webp" target="iframeContent"><img src="img shipci/393639403.jpg.webp" alt="Thumbnail 4" class="thumbnail"></a>
+                
+            </div>
+        </div>
+
+        <div class="product-info">
+            <h1>Щипцы-лопатки кухонные универсальные Supretto из нержавеющей стали (8635-0001)</h1>
+            <h2>Описание</h2>
+            <p>Щипцы-лопатки Supretto существенно облегчают процесс приготовления и уберегают руки от продуктов высокой температуры. 
+
+                Качественный пищевой материал.
+                
+                Щипки изготовлены из пищевого материала, отличающегося своей прочностью и надежностью. 
+                
+                Такими аксессуарами легко брать разную еду при приготовлении или использовать на фуршетах. 
+                
+                Процесс использования.
+                
+                Щипцы-лопатки неприхотливы в использовании.
+                
+                Они не впитывают разнообразные пищевые запахи и сохраняют настоящий вкус пищи. 
+                
+                Чтобы очистить их от загрязнения, не нужно применять специальные средства, достаточно воды и моющего средства. 
+                
+                Особенности конструкции.
+                
+                Щипцы-лопатки Supretto имеют безопасный дизайн за счет скругленных краев. 
+                
+                Они не скользят в руке и приятны на ощупь.
+                
+                Щипки легко зажимают продукты и обеспечивают надежное использование. 
+                
+                Щипцы-лопатки Supretto термостойкие и легкие. Они устойчивые к коррозии и долговечные. </p>
+
+            <button class="price-button">130₴</button>
+        </div>
+    </section>
+</body>
+
+</html>

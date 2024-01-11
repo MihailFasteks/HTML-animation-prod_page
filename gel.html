@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        section {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .gallery {
+            max-width: 400px;
+        }
+
+        .main-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .thumbnails {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .thumbnail {
+            max-width: 80px;
+            height: 80px;
+            cursor: pointer;
+        }
+
+        .product-info {
+            max-width: 400px;
+            padding: 20px;
+        }
+
+        .price-button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .iframe-container {
+    width: 800px; /* увеличьте ширину */
+    height: 600px; /* увеличьте высоту */
+    border: 1px solid gray;
+}
+
+iframe {
+    width: 100%; /* ширина 100% для полного использования доступного пространства */
+    height: 100%; /* высота 100% для полного использования доступного пространства */
+    border: none;
+}
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <div class="gallery">
+            <div class="iframe-container">
+                <iframe src="img gel/380194927.jpg.webp" name="iframeContent"></iframe>
+            </div>
+            <div class="thumbnails">
+                <a href="img gel/380194927.jpg.webp" target="iframeContent"><img src="img gel/380194927.jpg.webp" alt="Thumbnail 1" class="thumbnail"></a>
+                <a href="img gel/380194939.jpg.webp" target="iframeContent"><img src="img gel/380194939.jpg.webp" alt="Thumbnail 2" class="thumbnail"></a>
+                <a href="img gel/380194954.jpg.webp" target="iframeContent"><img src="img gel/380194954.jpg.webp" alt="Thumbnail 3" class="thumbnail"></a>
+                <a href="img gel/380194969.jpg.webp" target="iframeContent"><img src="img gel/380194969.jpg.webp" alt="Thumbnail 4" class="thumbnail"></a>
+                
+            </div>
+        </div>
+
+        <div class="product-info">
+            <h1>Средство для деликатной стирки Perwoll Renew Color 3.74 л + Perwoll Renew Black 3.74 л (9000101587319)</h1>
+            <h2>Описание</h2>
+            <p>Одежда выглядит как новая? Да! Ведь Perwoll Renew для черных и темных вещей – это безупречный уход за любимой одеждой! Усовершенствованная формула стирального средства обеспечивает чистоту, восстанавливает темные цвета и волокна, давая им непревзойденный вид!
+
+                Гель для стирки Perwoll рекомендован для всех видов тканей, включая деликатные. Для изделий из шерсти и шелка используйте Perwoll для шерсти и шелка. Средство можно использовать как в холодной, так и в горячей воде, а также как для машинной, так и для ручной стирки.</p>
+
+            <button class="price-button">844₴</button>
+        </div>
+    </section>
+</body>
+
+</html>

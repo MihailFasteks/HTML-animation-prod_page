@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        section {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .gallery {
+            max-width: 400px;
+        }
+
+        .main-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .thumbnails {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .thumbnail {
+            max-width: 80px;
+            height: 80px;
+            cursor: pointer;
+        }
+
+        .product-info {
+            max-width: 400px;
+            padding: 20px;
+        }
+
+        .price-button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .iframe-container {
+    width: 800px; /* увеличьте ширину */
+    height: 600px; /* увеличьте высоту */
+    border: 1px solid gray;
+}
+
+iframe {
+    width: 100%; /* ширина 100% для полного использования доступного пространства */
+    height: 100%; /* высота 100% для полного использования доступного пространства */
+    border: none;
+}
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <div class="gallery">
+            <div class="iframe-container">
+                <iframe src="img tide/394699780.jpg.webp" name="iframeContent"></iframe>
+            </div>
+            <div class="thumbnails">
+                <a href="img tide/394699780.jpg.webp" target="iframeContent"><img src="img tide/394699780.jpg.webp" alt="Thumbnail 1" class="thumbnail"></a>
+                <a href="img tide/394699790.jpg.webp" target="iframeContent"><img src="img tide/394699790.jpg.webp" alt="Thumbnail 2" class="thumbnail"></a>
+                <a href="img tide/394699799.jpg.webp" target="iframeContent"><img src="img tide/394699799.jpg.webp" alt="Thumbnail 3" class="thumbnail"></a>
+                <a href="img tide/395605988.jpg.webp" target="iframeContent"><img src="img tide/395605988.jpg.webp" alt="Thumbnail 4" class="thumbnail"></a>
+                
+            </div>
+        </div>
+
+        <div class="product-info">
+            <h1>Ледоступы Viking Fishing Ice Walker L (39-46) 26-29 см (19190003)</h1>
+            <h2>Описание</h2>
+            <p>Ледоступы Viking Fishing снизят риск получения травм во время рыбалки на льду, при продвижении по гололедице или по заснеженных поверхностях. Изготовлены из эластичного и морозостойкого материала, что позволяет использовать их с разными видами обуви. А стойкие к коррозии металлические элементы увеличат трение с скользящими поверхностями.
+
+                Линейка состоит из моделей Ice Walker, Ice Profi, Ice Master, отличающихся наличием или размерами шипов. Это позволяет выбрать ледоуступы для различных условий использования.</p>
+
+            <button class="price-button">215₴</button>
+        </div>
+    </section>
+</body>
+
+</html>

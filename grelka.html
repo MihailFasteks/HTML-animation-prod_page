@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        section {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .gallery {
+            max-width: 400px;
+        }
+
+        .main-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .thumbnails {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .thumbnail {
+            max-width: 80px;
+            height: 80px;
+            cursor: pointer;
+        }
+
+        .product-info {
+            max-width: 400px;
+            padding: 20px;
+        }
+
+        .price-button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .iframe-container {
+    width: 700px; /* увеличьте ширину */
+    height: 600px; /* увеличьте высоту */
+    border: 1px solid gray;
+}
+
+iframe {
+    width: 100%; /* ширина 100% для полного использования доступного пространства */
+    height: 100%; /* высота 100% для полного использования доступного пространства */
+    border: none;
+}
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <div class="gallery">
+            <div class="iframe-container">
+                <iframe src="img grelka/364845976.jpg.webp" name="iframeContent"></iframe>
+            </div>
+            <div class="thumbnails">
+               
+                <a href="img grelka/364845976.jpg.webp" target="iframeContent"><img src="img grelka/364845976.jpg.webp" alt="Thumbnail 4" class="thumbnail"></a>
+                <a href="img grelka/373602099.jpg.webp" target="iframeContent"><img src="img grelka/373602099.jpg.webp" alt="Thumbnail 4" class="thumbnail"></a>
+                <a href="img grelka/390763393.jpg-2.webp" target="iframeContent"><img src="img grelka/390763393.jpg-2.webp" alt="Thumbnail 4" class="thumbnail"></a>
+                <a href="img grelka/390763394.jpg.webp" target="iframeContent"><img src="img grelka/390763394.jpg.webp" alt="Thumbnail 4" class="thumbnail"></a>
+                
+            </div>
+        </div>
+
+        <div class="product-info">
+            <h1>ПХимическая грелка для ног TakeHOT 10 пар (4820249530054)</h1>
+            <h2>Описание</h2>
+            <p>TakeHot — это одноразовая грелка для ног, активирующаяся при контакте с воздухом.
+                Непрерывно вырабатывает тепло до 8 часов. Грелки надо приклеить на носки и обуться.
+                Грелки для ног можно использовать во время зимних прогулок, активных видов спорта, во время сна, в полевых условиях или во время работы на улице при экстремально низких температурах.</p>
+
+            <button class="price-button">450₴</button>
+        </div>
+    </section>
+</body>
+
+</html>

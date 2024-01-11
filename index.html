@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Card</title>
+  <style>
+.main{
+    display: flex;
+    justify-content: center;
+}
+    .card {
+      width: 300px;
+      height: 400px;
+      margin-left: 10px;
+      margin-right: 10px;
+      position: relative;/*относительное позиционирование родительского элемента,
+      чтобы дочерние .product, .description располагать внутри card*/
+      border: 1px solid #f5dde1;
+    }
+    .product{
+        display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .product, .description {
+        
+      width: 100%;/*ширина 100% родителя*/
+      height: 100%;/*высота 100% родителя*/
+      position: absolute;/*абсолютное позиционирование элементов внутри родителя с классом card*/
+      left: 0;/*координата позиционирвоания слева 0px*/
+      top: 0;/*координата позиционирвоания сверху 0px*/
+      text-align:center;
+      
+      backface-visibility: hidden;/*скрывает обратную сторону во время переворота*/
+      background-color: #fff;
+      transition: 1s;
+     }
+
+    .description a{
+      display:inline-block;
+      padding: 10px 30px;
+      margin-top:30px;
+      text-decoration:none;
+      text-transform:uppercase;
+      color:#fff;
+      background-color: #a20a23;
+    }
+    .description {
+      box-sizing:border-box;
+      padding:40px;
+      transform: rotateY(180deg); /*поврот блока с описание на 180 град, прячем в начальном состоянии, без наведения курсора мыши*/
+    }
+    .card:hover .product {
+    	transform: rotateY(180deg); /*разворачиваем блок с изображением на 180 градусов*/
+    }
+    .card:hover .description {
+    	transform: rotateY(360deg); /*возвразщаем блок с описанием*/
+    }
+  </style>
+</head>
+<body>
+    <div class="main">
+        <div class="card">
+            <div class="product"><img src="img/390763393.jpg-2.webp" width="80%">
+            </div>
+            <div class="description">
+              <h2>Химическая грелка для ног</h2>
+              <hr>
+              <p>TakeHot — это одноразовая грелка для ног, активирующаяся при контакте с воздухом.
+                Непрерывно вырабатывает тепло до 8 часов. </p>
+              <a href="#">450 грн</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="product"><img src="img/326691465.jpg.webp" width="80%"></div>
+            <div class="description">
+              <h2>Пральний порошок Green Line для всіх видів </h2>
+              <hr>
+              <p>Універсальний пральний порошок Green Line з активними ферментами та ніжним ароматом свіжості для попереднього замочування та основного прання всіх видів кольорових тканин.</p>
+              <a href="#">365 грн</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="product"><img src="img/380194927.jpg.webp" width="80%"></div>
+            <div class="description">
+              <h2>Perwoll Renew Color 3.74 л + Perwoll Renew Black 3.74 л</h2>
+              <hr>
+              <p>Perwoll Renew для черных и темных вещей – это безупречный уход за любимой одеждой!</p>
+              <a href="#">850 грн</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="product"><img src="img/393639399.jpg.webp" width="80%"></div>
+            <div class="description">
+              <h2>Щипцы-лопатки кухонные универсальные Supretto</h2>
+              <hr>
+              <p>Щипцы-лопатки Supretto существенно облегчают процесс приготовления и уберегают руки от продуктов высокой температуры. </p>
+              <a href="#">130 грн</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="product"><img src="img/394699780.jpg.webp" width="80%"></div>
+            <div class="description">
+              <h2>Ледоступы Viking Fishing Ice Walker L</h2>
+              <hr>
+              <p>Ледоступы Viking Fishing снизят риск получения травм во время рыбалки на льду, при продвижении по гололедице или по заснеженных поверхностях.</p>
+              <a href="cats.html">215 грн</a>
+            </div>
+          </div>
+    </div>
+  
+</body>
+</html>
